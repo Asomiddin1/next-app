@@ -37,11 +37,8 @@ const Navbar = ({ window }: Props) => {
 	const drawer = (
 		<Box sx={{ textAlign: 'center' }}>
 			<Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingX: '20px' }}>
-				<Box sx={{ my: 2, display: 'flex', alignItems: 'center', gap: '5px' }}>
-					<Image src={''} alt={'logo'} width={50} height={50} />
-					<Typography paddingTop={'7px'} variant='h4' fontFamily={'fantasy'} component='div'>
-					  Next
-					</Typography>
+				<Box sx={{ my: 1, display: 'flex', alignItems: 'center', gap: '5px' }}>
+				<img width={200} src={'https://o.remove.bg/downloads/7b60e373-e9ce-4619-8175-0b8db0c0d6fc/360_F_515137824_RWOnZxY8GxrD4YHHJ62PuNdMm210T2Ep-removebg-preview.png'} alt="logo" />
 				</Box>
 				<CloseIcon onClick={handleDrawerToggle} sx={{ cursor: 'pointer' }} />
 			</Box>
@@ -75,10 +72,7 @@ const Navbar = ({ window }: Props) => {
 						onClick={() => router.push('/')}
 						sx={{ my: 2, alignItems: 'center', gap: '5px', flexGrow: 1, display: 'flex', cursor: 'pointer' }}
 					>
-						<Image src={''} alt={'logo'} width={50} height={50} />
-						<Typography paddingTop={'7px'} variant='h4' fontFamily={'fantasy'} component='div'>
-							Next
-						</Typography>
+					   <img width={200} src={'https://o.remove.bg/downloads/7b60e373-e9ce-4619-8175-0b8db0c0d6fc/360_F_515137824_RWOnZxY8GxrD4YHHJ62PuNdMm210T2Ep-removebg-preview.png'} alt="logo" />
 					</Box>
 
 					<Box sx={{ display: { xs: 'none', sm: 'block' } }}>

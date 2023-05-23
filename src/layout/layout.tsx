@@ -7,10 +7,11 @@ const Layout = ({children}:LayoutProps):JSX.Element => {
   return (
     <>
      <Navbar />
-     <Box height={'90vh'}>
+     <Box height={'90vh'} >
         {children}
+             <Footer />
      </Box>
-     <Footer />
+
     </>
   )
 }

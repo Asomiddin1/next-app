@@ -11,7 +11,7 @@ const Hero = ({ blogs }: HeroProps) => {
 	const router = useRouter();
 
 	return (
-		<Box width={'100%'} height={'70vh'} sx={{ backgroundColor: 'red' }}>
+		<Box width={'100%'} height={'70vh'} sx={{ backgroundColor: 'black' }}>
 			<Carousel
 				responsive={{
 					mobile: {
