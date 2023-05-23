@@ -6,18 +6,8 @@ import { format } from 'date-fns';
 
 const Sidebar = () => {
    return (
-      <Box width={'30%'} >
+      <Box width={{xs:'100%' , md:'30%'}} >
          <Box position={'sticky'} top={'100px'}  sx={{transition:'all .3s ease'}}>
-         <Box sx={{ border: '1px solid gray', padding: '20px', borderRadius: '10px', marginBottom: '10px' }}>
-            <Typography variant='h5' sx={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>Category</Typography>
-            {navItems.map((c) => (
-               <Fragment key={c.route}>
-                  <Button sx={{ display: 'block' }}>{c.label}</Button>
-                  <Divider />
-               </Fragment>
-            ))}
-        
-         </Box>
          <Box padding={'20px'} border={'1px solid gray'} marginTop={'20px'} borderRadius={'8px'}>
             <Typography>Latest blog</Typography>
             <Box sx={{display:'flex' , flexDirection:'column' , marginTop:'20px'} }>
@@ -43,6 +33,17 @@ const Sidebar = () => {
                   </Fragment>
                ))}
             </Box>
+         </Box>
+
+         <Box sx={{ border: '1px solid gray', padding: '20px', borderRadius: '10px', marginTop: '20px' }}>
+            <Typography variant='h5' sx={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>Category</Typography>
+            {navItems.map((c) => (
+               <Fragment key={c.route}>
+                  <Button sx={{ display: 'block' }}>{c.label}</Button>
+                  <Divider />
+               </Fragment>
+            ))}
+        
          </Box>
          </Box>
       </Box>

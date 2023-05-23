@@ -15,7 +15,7 @@ const IndexPage = () => {
     </Head>
     <Hero />
 
-    <Box sx={{display:'flex' , gap:'20px' , padding:'10px'} }>
+    <Box sx={{display:'flex' , flexDirection:{xs:'column' , md:'row'}, gap:'20px' , padding:'10px'} }>
        <Sidebar />
        <Content />
     </Box>
